@@ -1,10 +1,11 @@
 <script>
     import { onMount } from "svelte";
+    import Alpaca from "$lib/images/alpaca1.jpg";
 
     let showMobileMenu = false;
 
     const navItems = [
-        {label: "logo", href: "/"},
+        {label: "", href: "/", isLogo: true},
         {label: "Home", href: "/"},
         {label: "Projects", href:"/Projects"},
         {label: "Forløbs", href: "#"},
@@ -29,13 +30,20 @@
 
 <nav>
     <div class="inner">
+
         <div on:click={handleMobileClick} class={`mobile-icon${showMobileMenu ? ' active' : ''}`}>
           <div class="middle-line"></div>  
         </div>
         <ul class={`navbar-list${showMobileMenu ? ' mobile' : ''}`}>
             {#each navItems as item}
                 <li>
-                    <a href={item.href}>{item.label}</a>
+                    {#if item.isLogo}
+                        <a href={item.href}>
+                            <img class="logo-image" src={Alpaca} alt="Alpaca Logo"  />
+                        </a>
+                    {:else}
+                        <a href={item.href}>{item.label}</a>
+                    {/if}
                 </li>
             {/each}
         </ul>
@@ -63,8 +71,23 @@
         height: 100%;
     }
 
+    a {
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        height: 100%;
+    }
+
     body {
         background-color: blue;
+    }
+
+    .logo-image {
+        display: flex;
+        object-fit: cover;
+        justify-self: center;
+        align-self: center;
+        height: 100%;
     }
 
     .mobile-icon {
