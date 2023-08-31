@@ -1,6 +1,6 @@
 <script>
     import { onMount } from "svelte";
-    import Alpaca from "$lib/images/alpaca1.jpg";
+    import Alpaca from "$lib/images/alpaca3.jpg";
 
     let showMobileMenu = false;
 
@@ -8,8 +8,8 @@
         {label: "", href: "/", isLogo: true},
         {label: "Home", href: "/"},
         {label: "Projects", href:"/Projects"},
-        {label: "Forløbs", href: "#"},
-        {label: "Karakterbevis", href: "#"}
+        {label: "Forløb", href: "/Forløb"},
+        {label: "Karakterbevis", href: "/Karakterbevis"}
     ];
 
     const handleMobileClick = () => (showMobileMenu = !showMobileMenu);
@@ -60,7 +60,7 @@
     nav {
         background-color: rgba(0, 0, 0, 0.8);
         font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-        height: 50px;
+        height: 60px;
     }
 
     .innner {
@@ -73,13 +73,13 @@
 
     a {
         display: flex;
-        justify-self: center;
+        justify-self: left;
         align-self: center;
         height: 100%;
     }
 
     body {
-        background-color: blue;
+        background-color: blanchedalmond;
     }
 
     .logo-image {
@@ -88,6 +88,7 @@
         justify-self: center;
         align-self: center;
         height: 100%;
+        margin-top: 5px;
     }
 
     .mobile-icon {
@@ -152,7 +153,7 @@
     .navbar-list {
         display: none;
         width: 100%;
-        justify-content: space-between;
+        justify-content:flex-start;
         margin: 0;
         padding: 0 40px;
     }
@@ -178,7 +179,8 @@
         left: 0;
         width: 100%;
         height: 1px;
-        background-color: #424245;
+        /* background-color: #424245; */
+        margin: 20px;
     }
 
     .navbar-list a {
@@ -188,7 +190,8 @@
         height: 45px;
         align-items: center;
         padding: 0 10px;
-        font-size: 13px;
+        font-size: 18px;
+        margin-top: 5px;
     }
 
      @media only screen and (min-width: 767px) {

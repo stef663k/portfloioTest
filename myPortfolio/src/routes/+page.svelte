@@ -1,5 +1,5 @@
 <div class="mainName">
-    <h1>Welcome</h1>
+    <h1>Welcome to Stefan's portfolio</h1>
 </div>
 
 <style>
