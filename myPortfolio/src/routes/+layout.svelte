@@ -35,14 +35,14 @@
           <div class="middle-line"></div>  
         </div>
         <ul class={`navbar-list${showMobileMenu ? ' mobile' : ''}`}>
-            {#each navItems as item}
+            {#each navItems as item, index}
                 <li>
                     {#if item.isLogo}
-                        <a href={item.href}>
+                        <a class="image-alpaca" href={item.href}>
                             <img class="logo-image" src={Alpaca} alt="Alpaca Logo"  />
                         </a>
                     {:else}
-                        <a href={item.href}>{item.label}</a>
+                        <a class="listNav" href={item.href}>{item.label}</a>
                     {/if}
                 </li>
             {/each}
@@ -82,6 +82,7 @@
         background-color: blanchedalmond;
     }
 
+
     .logo-image {
         display: flex;
         object-fit: cover;
@@ -89,6 +90,8 @@
         align-self: center;
         height: 100%;
         margin-top: 5px;
+        margin-right: 50px;
+        border: none;
     }
 
     .mobile-icon {
@@ -192,6 +195,33 @@
         padding: 0 10px;
         font-size: 18px;
         margin-top: 5px;
+        margin-right: 25px;
+
+    }
+
+    .navbar-list li:nth-child(2) a:hover {
+        background-color: blueviolet;
+    }
+
+    .navbar-list li:nth-child(3) a:hover {
+        background-color: blueviolet;
+    }
+
+    .navbar-list li:nth-child(4) a:hover {
+        background-color: blueviolet;
+    }
+
+    .navbar-list li:nth-child(5) a:hover {
+        background-color: blueviolet;
+    }
+
+    .navbar-list a:not(.image-alpaca) {
+        border: 1px solid;
+        border-color: rgba(0, 0, 0, 1);
+    }
+
+    .link-Project:hover {
+        border-color: blueviolet;
     }
 
      @media only screen and (min-width: 767px) {
