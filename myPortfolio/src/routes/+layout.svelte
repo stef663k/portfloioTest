@@ -1,6 +1,6 @@
 <script>
     import { onMount } from "svelte";
-    import Alpaca from "$lib/images/alpaca3.jpg";
+    import Alpaca from "$lib/images/alpaca.png";
 
     let showMobileMenu = false;
 
