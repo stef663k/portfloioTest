@@ -30,6 +30,9 @@
         }
     
         .github-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             flex-basis: 45%;
             background-color: #f0f0f0;
             padding: 20px;
@@ -37,6 +40,9 @@
         }
 
         .azure-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
             flex-basis: 45%;
             background-color: #f0f0f0;
             padding: 20px;
@@ -55,7 +61,7 @@
             align-items: center;
             width: 128px;
             height: 128px;
-
+            margin: 0 auto;
         }
         .webserverImg:hover, .calculatorImg:hover, .webscraperImg:hover, .svelteImg:hover, .zigImg:hover, .mauiImg:hover, a:hover {
             background-color: rgba(0, 0, 0, 0.8);

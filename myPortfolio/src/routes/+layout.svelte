@@ -14,18 +14,42 @@
 
     const handleMobileClick = () => (showMobileMenu = !showMobileMenu);
 
-    const mediaQueryHandler = e =>{
-
+    /**
+     * @param {MediaQueryListEvent} e
+     */
+    const mediaQueryHandler = (e) =>{
+        
         if(!e.matches){
             showMobileMenu = false;
         }
     };
 
+
     onMount(() => {
         const mediaListener = window.matchMedia("(max-width: 767px)");
 
-        mediaListener.addEventListener('change',mediaQueryHandler);
-    });
+        mediaListener.addEventListener("change", mediaQueryHandler);
+
+        // Function to toggle the mobile menu when the 'Enter' key is pressed
+        const handleKeyPress = (event) => {
+        if (event.key === "Enter") {
+            handleMobileClick();
+        }
+        };
+
+        // Add keyboard event listeners to the mobile icon
+        const mobileIcon = document.querySelector(".mobile-icon");
+
+            /**
+            * @type {HTMLDivElement}
+            */
+        if (mobileIcon) {
+            mobileIcon.addEventListener("click", handleMobileClick);
+            mobileIcon.addEventListener("keydown", handleKeyPress);
+        }
+  });
+
+
 </script>
 
 <nav>
