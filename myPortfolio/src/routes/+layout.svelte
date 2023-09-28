@@ -87,7 +87,7 @@
         height: 60px;
     }
 
-    .innner {
+    .inner {
 
         box-sizing: border-box;
         display: flex;

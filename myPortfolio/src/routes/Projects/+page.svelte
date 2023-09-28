@@ -34,9 +34,11 @@
             flex-direction: column;
             justify-content: center;
             flex-basis: 45%;
-            background-color: #f0f0f0;
+            background-color: #blanchedalmond;
             padding: 20px;
+            margin-bottom: 10px;
             text-align: center;
+            border: 1px solid;
         }
 
         .azure-container {
@@ -44,13 +46,15 @@
             flex-direction: column;
             justify-content: center;
             flex-basis: 45%;
-            background-color: #f0f0f0;
+            background-color: #blanchedalmond;
             padding: 20px;
             margin-bottom: 10px;
             display: block;
+            border: 1px solid;
         }
         li {
-            margin-bottom: 30px;
+            /* margin-bottom: 30px;
+             */
         }
         .svelteIng {
             width: 20%;
@@ -63,8 +67,8 @@
             height: 128px;
             margin: 0 auto;
         }
-        .webserverImg:hover, .calculatorImg:hover, .webscraperImg:hover, .svelteImg:hover, .zigImg:hover, .mauiImg:hover, a:hover {
-            background-color: rgba(0, 0, 0, 0.8);
+        .webserverImg:hover, .calculatorImg:hover, .webscraperImg:hover, .svelteImg:hover, .zigImg:hover, .mauiImg:hover {
+            background-color: #e5d3b8;
         }
     </style>
     <title>Projects</title>
