@@ -1,8 +1,6 @@
 <script>
-        /**
-     * Function to update date elements in the HTML.
-     */
-        const currentDate = new Date();
+     
+    const currentDate = new Date();
 
        /**
      * @type {{ [key: string]: Date }}

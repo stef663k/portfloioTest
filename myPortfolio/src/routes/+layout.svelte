@@ -8,8 +8,7 @@
         {label: "", href: "/", isLogo: true},
         {label: "Home", href: "/"},
         {label: "Projects", href:"/Projects"},
-        {label: "Forløb", href: "/Forløb"},
-        {label: "Karakterbevis", href: "/Karakterbevis"}
+        {label: "Forløb", href: "/Forløb"}
     ];
 
     const handleMobileClick = () => (showMobileMenu = !showMobileMenu);
