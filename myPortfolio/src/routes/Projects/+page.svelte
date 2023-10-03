@@ -53,6 +53,7 @@
             border: 1px solid;
         }
         li {
+
             /* margin-bottom: 30px;
              */
         }
@@ -70,6 +71,16 @@
         .webserverImg:hover, .calculatorImg:hover, .webscraperImg:hover, .svelteImg:hover, .zigImg:hover, .mauiImg:hover {
             background-color: #e5d3b8;
         }
+        .containers {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
+        .azContainer {
+            display: flex;
+            flex-direction: column;
+            row-gap: 10px;
+        }
     </style>
     <title>Projects</title>
 </head>
@@ -80,7 +91,7 @@
         <div class="project-container">
             <div class="github-container">
                 <h3>Github content</h3>
-                <ul>
+                <ul class="containers">
                     <li>
                         <div class="webserverImg">
                             <a href="https://github.com/stef663k/WebServer"><img src={server} alt="this is an icon for a web server"/></a>
@@ -103,7 +114,7 @@
             </div>
             <div class="azure-container">
                 <h3>Azure content</h3>
-                <ul>
+                <ul class="azContainer">
                     <li>
                         <div class="svelteImg">
                             <a href="https://dev.azure.com/stef663k/Svelte%20projects"><img src={svelteImage} alt="image of svelte icon"/></a>
