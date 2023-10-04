@@ -67,8 +67,10 @@
             text-align: center;
             flex-direction: column;
             border: 1px solid;
+            padding: 10px
         }
         span{
+            padding: 10px;
             width: 50%;
             border: 1px solid;
         }
