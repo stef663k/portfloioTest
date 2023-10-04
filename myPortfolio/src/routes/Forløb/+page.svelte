@@ -60,6 +60,18 @@
             display: flex;
             justify-content: center;
         }
+        .dates{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: column;
+            border: 1px solid;
+        }
+        span{
+            width: 50%;
+            border: 1px solid;
+        }
     </style>
     <title>Forløb</title>
 </header>
@@ -67,33 +79,20 @@
 <div class="forløbh1">
     <h1>Forløb</h1>
 </div>
-<div>
-    <div class="G2" >
-    </div>  
-    <div class="P1">
-    </div>
-    <div class="H1">
-    </div>
-    <div class="P2">
-    </div>
-     <div class="H2">
-    </div>
-     <div class="P3">
-    </div>
-     <div class="H3">
-    </div>
-     <div class="P4">
-    </div>
-     <div class="H4">
-    </div>
-     <div class="P5">
-    </div>
-     <div class="H5">
-    </div>
-     <div class="P6">
-    </div>
-     <div class="H6">
-    </div>
-     <div class="P7">
-    </div>
+<div class="dates">
+    <span class="grundforløb" id="dateG2">Grundforløb 2</span>
+    <span class="p1" id="dateP1">Praktikforløb 1</span>
+    <span class="h1" id="dateH1">Hovedforløb 1</span>
+    <span class="p2" id="dateP2">praktikforløb 2</span>
+    <span class="h2" id="dateH2">Hovedforløb 2</span>
+    <span class="p3" id="dateP3">Praktikforløb 3</span>
+    <span class="h3" id="dateH3"> Hovedforløb 3</span>
+    <span class="p4" id="dateP4">Praktikforløb 4</span>
+    <span class="h4" id="dateH4"> Hovedforløb 4</span>
+    <span class="p5" id="dateP5"> Praktikforløb 5</span>
+    <span class="h5" id="dateH5">Hovedforløb 5</span>
+    <span class="p6" id="dateP6">Praktikforløb 6</span>
+    <span class="h6" id="dateH6">Hovedforløb 6</span>
+    <span class="p7" id="dateP7">Praktikforløb 7</span>
+    <span class="slut" id="dateSlut">SLUT</span>
 </div>
