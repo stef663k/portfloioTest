@@ -33,7 +33,7 @@
     <div class="aboutme">
         <p>
             I'm a 35 year old guy, who decided to switch day job out with the books during a pandemic. 
-            I started learning c# last january, and I am currently a beginner in this language. 
+            I started learning c# january 2021, and I am currently a beginner in this language. 
             I got a couple of projects under the project tap, where you can see them on github. 
             There will come more projects on there as i make them. 
             I also started dabling in Zig and Unity. 
